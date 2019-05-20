@@ -1,0 +1,40 @@
+mixin header()
+	header.header&attributes(attributes)
+		.header__in.container
+			.header__row.row
+				.header__col.col-lg-6.col-md-6.col-sm-6.col-xs-6
+					a.header__logo.logo(href="#section-1")
+						img(src="assets/images/general/logo@2x.png" alt="Стм - инженерные системы")
+				//- .header__col.header__col_right.col-lg-6.col-md-6.col-sm-6.col-xs-6
+			nav.header__nav.nav
+
+				label.nav__trigger(for="nav-checkbox")
+					svg.nav__trigger-icon(viewbox='0 0 26 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M0 18H26V20H0V18Z', fill='black')
+						path(d='M0 9H26V11H0V9Z', fill='black')
+						path(d='M0 0H26V2H0V0Z', fill='black')
+
+					svg.nav__trigger-close(viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M0.928955 2.34296L2.34296 0.929955L7.99996 6.58596L13.657 0.928955L15.071 2.34296L9.41395 7.99996L15.071 13.657L13.657 15.071L7.99996 9.41395L2.34296 15.071L0.928955 13.657L6.58596 7.99996L0.928955 2.34296Z', fill='#1D1D1B')
+
+				input#nav-checkbox.nav__trigger-checkbox(type="checkbox")
+
+				ul#menu.nav__list
+					li.nav__item.nav__item_active(data-menuanchor="section-01")
+						a.nav__link(href="#section-1") Главная
+					li.nav__item(data-menuanchor="section-02")
+						a.nav__link(href="#section-2") О нас
+					li.nav__item(data-menuanchor="section-03")
+						a.nav__link(href="#section-3") Наша деятельность
+					li.nav__item(data-menuanchor="section-04")
+						a.nav__link(href="#section-4") Инженерные работы
+					li.nav__item(data-menuanchor="section-05")
+						a.nav__link(href="#section-5") Этапы деятельности
+					li.nav__item(data-menuanchor="section-06")
+						a.nav__link(href="#section-6") Преимущества
+					li.nav__item(data-menuanchor="section-07")
+						a.nav__link(href="#section-7") Наши заказчики
+					li.nav__item(data-menuanchor="section-08")
+						a.nav__link(href="#section-8") Лицензии
+					li.nav__item(data-menuanchor="section-09")
+						a.nav__link(href="#section-9") Контакты

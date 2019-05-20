@@ -1,0 +1,81 @@
+.contacts
+	// .section__in
+
+	// &__row
+	// 	height 100%
+	// 	clearfix()
+		
+	.slimScrollDiv
+		+r($x)
+			
+			height 990px
+					
+	&__col
+		position relative
+		padding-bottom 0
+		// +r($x)
+		// 	min-height 1160px 
+		&:after
+			position absolute
+			z-index -1
+			// top 94px
+			bottom 0
+			// left -124px
+			left -118px
+			content ''
+			width 1282px
+			height 733px
+			background url(../images/content/map.png) 0 100% no-repeat
+			+r($l)
+				left -315px
+			+r($m)
+				left -252px
+			+r($s)
+				left -252px
+			+r($x)
+				// bottom 260px
+				// bottom 0
+				bottom -150px 
+				left -570px
+				
+
+	&__list
+		margin 0
+		padding 0
+		list-style none
+		+r($x)
+			// min-height 1000px
+			padding-bottom 400px
+
+	&__item
+		margin-bottom 48px
+		+r($x)
+			min-height 190px
+
+	&__city,
+	&__address,
+	&__email,
+	&__phone
+		color #000
+		font-size 16px
+		font-weight 300
+		line-height 1.3125
+		&:hover,
+		&:focus
+			color #000
+	&__city
+		margin-bottom 33px
+		font-family $r
+		font-size 30px
+		font-weight 400
+		line-height 1.1
+
+	&__address
+		margin-bottom 19px
+
+	&__email
+		margin-bottom 22px
+	&__email,
+	&__phone
+		display block
+

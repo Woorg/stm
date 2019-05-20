@@ -1,0 +1,239 @@
+.advantages
+	&__col
+		position relative
+		&:after
+			position absolute
+			z-index -1
+			top 248px
+			// left -366px
+			left -360px
+			content ''
+			width 1349px
+			height 461px
+			background url('../images/general/wave.png') 0 100%  no-repeat
+			+r($l)
+				left -374px
+				width 1166px
+			+r($m)
+				left -290px
+	&__title
+		margin-bottom 20px
+
+	&__text
+		margin-bottom 100px
+		+r($l)
+			margin-bottom 117px
+		+r($m)
+			margin-bottom 97px
+		+r($s)
+			margin-bottom 77px
+	&__list
+		margin 0
+		padding 0
+		min-height 461px
+
+		list-style none
+		display flex
+		flex-wrap wrap
+		// align-items center
+		align-items flex-start
+		+r($m)
+
+			flex-direction row
+	&__item
+		position relative
+		// margin-bottom 24px
+		margin-bottom 66px
+		flex 1 1 auto
+		+r($l)
+			// margin-bottom 183px
+			margin-bottom 0
+		+r($m)
+			margin-bottom 102px
+		+r($s)
+			margin-bottom 114px
+		&:last-child
+			margin-bottom 30px
+
+
+
+	&__item_1
+		margin-left 40px
+		width 336px
+		padding-left 168px
+		+r($l)
+			// margin-top 7px
+			margin-left 0
+			padding-left 122px
+		+r($m)
+			margin-left 40px
+			padding-left 168px
+			width 100
+		+r($s)
+			margin-left 0
+			padding-left 154px
+		.advantages__icon
+			+r($l)
+				// top -44px
+				top 9px
+				// bottom -8px
+				max-width 141px
+			+r($m)
+				max-width 100%
+			+r($s)
+				top 28px
+				left 10px
+				max-width 126px
+		.advantages__item-title
+			margin-bottom -35px
+			+r($l)
+				// margin-bottom -50px
+				margin-bottom 0
+			
+
+
+	&__item_2
+		width 166px
+		// padding-left 104px
+		padding-left 24px
+		+r($l)
+			padding-left 47px
+		+r($m)
+			margin-left 428px
+			padding-left 64px
+			width 100%
+		+r($s)
+			margin-left 0
+			padding-left 154px
+		.advantages__icon
+			top 20px
+			left -80px
+			+r($l)
+				// top 25px
+				top 19px
+				left -42px
+				max-width 110px
+
+			+r($m)
+				top 17px
+				max-width 100%
+
+			+r($s)
+				top 37px
+				left 40px
+				max-width 100px
+
+		.advantages__item-title
+			margin-bottom -35px
+			+r($l)
+				// margin-bottom -60px
+				margin-bottom 0
+
+	&__item_3
+		// margin-left 166px
+		margin-left 172px
+		width 302px
+		padding-left 137px
+		+r($l)
+			margin-top -40px
+			margin-left 48px
+		+r($m)
+			margin-top 0
+			padding-left 160px
+			width 100%
+		+r($s)
+			margin-left 0
+			padding-left 152px
+		.advantages__icon
+			top -27px
+			+r($l)
+				top 27px
+				left 15px
+				max-width 105px
+			+r($m)
+				top 7px
+				max-width 100%
+			+r($s)
+				top 37px
+				left 31px
+				max-width 93px
+		.advantages__item-title
+			margin-top -44px
+			margin-bottom 0
+			+r($l)
+				margin-top 0
+				margin-bottom 0
+			+r($m)
+				margin-top -12px
+			+r($s)
+				margin-top -29px	
+
+	&__item_4
+		width 392px
+		// padding-left 185px
+		padding-left 174px
+		+r($l)
+			margin-top 0
+			padding-left 154px
+		+r($m)
+			margin-left 280px
+			padding-left 104px
+			width 100%
+		+r($s)
+			margin-left 0
+			padding-left 154px
+		.advantages__icon
+			top 0
+			left -10px
+			+r($l)
+				top -18px
+				left 20px
+				max-width 153px
+			+r($m)
+				top 12px
+				left -70px
+				max-width 100%
+
+			+r($s)
+				top 62px
+				left 4px
+				max-width 143px
+		.advantages__item-title
+			margin-top -50px
+			margin-bottom 0
+			+r($l)
+				margin-top -60px
+				margin-bottom 0
+			+r($m)
+				margin-top -30px
+			+r($s)
+				margin-top 20px
+
+	&__icon
+		position absolute
+		top 50%
+		left 0
+		transform translateY(-50%)
+		img
+			max-width 100%
+			height auto
+
+	&__item-title
+		position relative
+		padding-bottom 9px
+		font-family $rS
+		font-size 16px
+		font-weight 700
+		line-height 1.375
+		&:after
+			position absolute
+			top 100%
+			left 0
+			content ''
+			width 30px
+			height 4px
+			background-color #000000
+
+
+	.section__scrollable
+		padding-right 0

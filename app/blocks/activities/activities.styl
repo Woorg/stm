@@ -1,0 +1,121 @@
+.activities
+	&__in
+		padding-bottom 32px
+
+	&__scrollable
+		padding-right 0
+		display flex
+		justify-content flex-start
+		+r($s)
+			flex-wrap wrap
+
+	&__col
+		margin-right 30px
+		padding-left 15px
+		max-width 528px
+		width 100%
+		+r($l)
+			max-width 460px
+		+r($m)
+			max-width 485px
+		+r($s)
+			margin-right 0
+			// padding-right 15px
+			padding-left 0
+			padding-right 0
+			max-width 100%
+	&__side
+		max-width 427px
+		width 100%
+		+r($l)
+			max-width 303px
+
+		+r($m)
+			margin-top 180px
+			padding-right 15px
+			padding-left 15px
+			max-width 155px
+
+		+r($s)
+			margin-top 30px
+			padding-right 0
+			padding-left 0
+			max-width 100%
+
+
+	&__image
+		margin-bottom 28px
+		+r($l)
+			height 520px
+
+		+r($m)
+			display none
+
+		img
+			max-width 100%
+			height auto
+			+r($l)
+				height 100%
+				object-fit cover
+
+	&__list
+		margin 0
+
+		padding 0
+		list-style none
+		display flex
+		+r($l)
+			margin-left -1px
+			margin-right -12px
+			flex-wrap wrap
+		+r($m)
+			margin-left 0
+			margin-right 0
+		+r($s)
+			flex-direction column
+			align-items center
+	&__item
+		margin-left 8px
+		flex 1 1 138px
+		background-color #000000
+		color #ffffff
+		font-family $o
+		font-size 30px
+		font-weight 700
+		line-height 1
+		text-align center
+		+r($l)
+			margin-left 0
+			margin-right 8px
+			margin-bottom 8px
+			flex 0 1 46.8%
+		+r($m)
+			margin-right 0
+			flex 1 1 139px
+		+r($s)
+			max-width 139px
+			flex 0 0 139px
+
+
+		&:first-child
+			margin-left 0
+
+
+	&__stat
+		border-bottom 1px solid #595959
+		padding-top 23px
+		padding-bottom 24px
+
+	&__item-text
+		position relative
+		padding-top 16px
+		padding-right 20px
+		padding-bottom 25px
+		padding-left 20px
+		background url('../images/general/shine.png') 0 0 repeat-x
+		font-family $rC
+		font-size 13px
+		font-weight 400
+		line-height 1.384
+		text-transform uppercase
+

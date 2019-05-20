@@ -1,0 +1,131 @@
+.stages
+	&__title
+		margin-bottom 104px
+		border-bottom 1px solid #cec000
+		padding-bottom 24px
+		+r($x)
+			margin-bottom 65px
+	&__list
+		margin 0
+		padding 0
+		list-style none
+		display flex
+		flex-wrap wrap
+	&__item
+		position relative
+		margin-bottom 88px
+		padding-left 90px
+		min-height 127px
+		flex 1 1 auto
+		flex 1 1 33%
+		+r($l)
+			flex 1 1 50%
+
+		+r($x)
+			margin-bottom 103px
+			min-height auto
+			flex 0 1 100%
+
+	&__item_1
+		padding-left 136px
+		+r($l)
+			padding-left 164px
+		+r($x)
+			padding-left 142px
+
+		.stages__icon
+			margin-top -20px
+			left -26px
+			+r($l)
+				// left -13px
+				left 3px
+			+r($x)
+				left -19px
+	&__item_2
+		padding-left 124px
+		+r($l)
+			padding-left 153px
+		+r($x)
+			padding-left 142px
+
+		.stages__icon
+			margin-top -32px
+			+r($l)
+				// left 13px
+				left 31px
+			+r($x)
+				left 18px
+	&__item_3
+		padding-left 160px
+		+r($l)
+			padding-left 164px
+		+r($x)
+			padding-left 142px
+
+		.stages__icon
+			left 22px
+			+r($x)
+				left 2px
+
+	&__item_4
+		padding-left 135px
+		+r($l)
+			padding-left 151px
+		+r($x)
+			padding-left 142px
+
+		.stages__icon
+			margin-top -44px
+			left -20px
+			+r($l)
+				left -3px
+			+r($x)
+				left -23px
+
+	&__item_5
+		padding-left 124px
+		+r($l)
+			padding-left 164px
+		+r($x)
+			padding-left 142px
+
+		.stages__icon
+			left 10px
+			+r($l)
+				left 38px
+
+			+r($x)
+				left 8px
+
+
+	&__item_6
+		padding-left 159px
+		+r($l)
+			padding-left 164px
+		+r($x)
+			padding-left 142px
+
+		.stages__icon
+			left -20px
+			+r($l)
+				left -10px
+
+			+r($x)
+				left -30px
+
+	&__icon
+		position absolute
+		top 0
+		left 0
+
+	&__item-title
+		margin-bottom 8px
+		font-family $rBk
+		font-size 19px
+		font-weight 400
+		line-height 1.157
+		text-transform uppercase
+	&__text
+		font-size 16px
+		font-weight 300
+		line-height 1.375

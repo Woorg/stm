@@ -1,0 +1,25 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/header/header
+include /blocks/section/section
+
+block head
+	- var pageTitle = 'Работаем на объектах различной сложности';
+
+block content
+	+header()
+	#top.page__main
+
+		+section-first()
+		+section-second()
+		+section-third()
+		+section-fourth()
+		+section-five()
+		+section-six()
+		+section-seven()
+		+section-eight()
+		+section-nine()
+
+	.page__num-w.container
+		.page__num.num
+			span.num__all

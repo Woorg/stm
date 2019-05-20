@@ -1,0 +1,125 @@
+.about
+	&__col
+		overflow auto
+
+	&__scrollable
+		padding-right 43px
+		border-right 1px solid #cec000
+		+r($m)
+			border-right none
+			padding-right 0
+		// &:after
+		// 	position absolute
+		// 	top 0
+		// 	right 0
+		// 	bottom 0
+		// 	content ''
+		// 	width 1px
+		// 	height 100%
+		// 	background #cec000
+
+	&__title
+		margin-top 110px
+		margin-bottom 18px
+
+	&__top
+		margin-bottom 34px
+		border-bottom 1px solid #CEC000
+		padding-bottom 8px
+
+	&__text
+		padding-right 30px
+		+r($m)
+			padding-right 0
+
+	&__list
+		margin 0
+		margin-left 4px
+		padding 0
+		padding-bottom 34px
+		list-style none
+
+	&__item
+		margin-top 34px
+
+	&__item-top
+		margin-bottom 30px
+
+	&__year-w
+		display flex
+		max-width 248px
+		width 100%
+
+	&__year
+		font-size 44px
+		font-family $o
+		font-weight 700
+		line-height 1
+
+	&__year-text
+		margin-top -1px
+		margin-left 18px
+		font-size 14px
+		line-height 1.714
+
+	&__image
+		margin-bottom 12px
+		+r($s)
+			height 206px
+		img
+			max-width 100%
+			height auto
+			+r($s)
+				height 100%
+				object-fit cover
+
+
+// .fp-scrollable
+	// z-index 1
+
+// .slimScrollDiv
+// 	&:after
+// 		position absolute
+// 		top 0
+// 		right 0
+// 		content ''
+// 		width 1px
+// 		height 100%
+// 		background #cec000
+
+.slimScrollBar
+	right -1px !important
+	width 4px !important
+	// height 597px !important
+	background-color #000000 !important
+	opacity 1 !important
+	+r($m)
+		display none
+	&:after
+		position absolute
+		top 0
+		right 0
+		content ''
+		width 1px
+		height 100%
+		background #cec000
+
+.slimScrollRail
+	top 0
+	right 0
+	bottom 0
+	height 100%
+	+r($m)
+		display none
+	&:after
+		position absolute
+		z-index 1
+		top 0
+		right 0
+		bottom 0
+		content ''
+		width 1px
+		height 100%
+		background #cec000
+
+// 	display none !important

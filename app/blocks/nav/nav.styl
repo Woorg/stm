@@ -1,0 +1,49 @@
+.nav
+	&__list
+		margin 0
+		padding 0
+		list-style none
+		display none
+		+rmin($l)
+			display block
+	&__item
+		line-height 1.875
+		.nav__link
+			color #000000
+			font-family $rL
+			font-weight 300
+			&:hover,
+			&:focus
+				font-family $rBk
+				font-weight normal
+				text-decoration none
+	&__item_active
+		.nav__link
+			font-family $rBk
+			font-weight normal
+
+
+	&__trigger
+		display block
+		width 26px
+		height 26px
+		cursor pointer
+		+rmin($l)
+			visuallyhidden()
+
+
+	&__trigger-icon
+		width 26px
+		height 20px
+
+	&__trigger-close
+		display none
+		width 26px
+		height 26px
+
+	&__trigger-checkbox
+		visuallyhidden()
+
+
+
+

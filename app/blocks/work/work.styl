@@ -1,0 +1,73 @@
+.work
+	&__title
+		margin-bottom 25px
+	&__list
+		margin 0
+		border-top 1px solid #CEC000
+		border-bottom 1px solid #CEC000
+		padding 0
+		list-style none
+
+	&__item
+		border-bottom 1px solid #CEC000
+		padding-top 20px
+		padding-bottom 20px
+		display flex
+		align-items center
+		+r($m)
+			// padding-bottom 28px
+			align-items flex-start
+		&:last-child
+			border-bottom 1px solid transparent
+
+	&__item-w
+		flex 1 1 auto
+		display flex
+		align-items center
+		flex-wrap wrap
+		// +r($s)
+		// 	flex-wrap wrap
+
+	&__icon
+		margin-right 26px
+		+r($m)
+			max-width 56px
+			width 100%
+		img
+			max-width 100%
+			height auto
+
+	&__item-title
+		font-size 18px
+		font-weight 300
+		line-height 1.722
+		+r($m)
+			padding-right 10px
+		+r($x)
+			margin-bottom 18px
+			width 100%
+
+	&__item-more
+		margin-left auto
+		padding-bottom 5px
+		border-bottom 2px solid #000
+		color #000
+		font-family $rBk
+		font-size 12px
+		font-weight 400
+		line-height 1
+		text-transform uppercase
+		tr(border-bottom .3s ease)
+		+r($x)
+			margin-left 0
+
+		&:hover,
+		&:focus
+			border-bottom 2px solid transparent
+			color #000
+			text-decoration none
+			tr(border-bottom .3s ease)
+
+
+
+

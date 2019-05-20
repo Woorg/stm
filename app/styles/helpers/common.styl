@@ -1,0 +1,125 @@
+.page
+	min-height 100vh
+	display flex
+	flex-direction column
+	background-color #ffed00
+	color #000000
+	font-display swap
+	font-family $rL
+	font-size 16px
+	font-weight 300
+	line-height 1.3125
+	// line-height 25px
+	// +rmin($tM)
+	// 	max-width 100%
+	// 	width 100%
+	&__inner
+		// flex 0 1 auto
+		flex 1 0 auto
+
+	&__num-w
+		position relative
+
+	&__num
+		position absolute
+		z-index 1
+		bottom 30px
+		right 15px
+
+
+// .fp-viewing-section-2,
+// .fp-viewing-section-3,
+// .fp-viewing-section-4,
+// .fp-viewing-section-5,
+// .fp-viewing-section-6,
+// .fp-viewing-section-7,
+// .fp-viewing-section-8,
+// .fp-viewing-section-9
+
+// 	.header
+// 		background #ffed00
+
+
+
+
+
+.num
+	width 64px
+	color #000000
+	font-family $o
+	font-size 34px
+	font-weight 700
+	line-height .911764705882353
+	text-transform uppercase
+	text-align right
+	white-space nowrap
+	+r($m)
+		display none
+	&__all
+		border-bottom 3px solid #000
+		margin-left 9px
+		padding-bottom 1px
+		display inline-block
+		vertical-align top
+		font-size 18px
+		font-weight 700
+		line-height 1
+.title
+	color #000000
+	font-family $rS
+	font-size 79px
+	font-weight 700
+	line-height .886075949367089
+	+r($x)
+		font-size 44px
+
+
+.title-second
+	color #000000
+	font-family $rC
+	font-size 50px
+	font-weight 400
+
+
+.wysiwyg
+	b
+		font-family $rM
+		font-weight 500
+
+
+	strong
+		font-size 18px
+		font-weight 300
+		line-height 1.333
+		+r($x)
+			line-height 1.233
+	p
+		margin-bottom 17px
+		font-size 14px
+		font-weight 300
+		line-height 1.714
+		+r($x)
+			margin-bottom 25px
+	blockquote
+		position relative
+		margin 0
+		margin-bottom 14px
+		border none
+		padding 0
+		padding-left 11px
+		&:after
+			position absolute
+			top 0
+			left 0
+			width 3px
+			height 100%
+			content ''
+			background-color #000000
+		p
+			font-family $rM
+			font-weight 500
+			font-size 14px
+			line-height 1.714
+
+
+

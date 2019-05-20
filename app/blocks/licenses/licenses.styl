@@ -1,0 +1,40 @@
+.licenses
+	&__list
+		margin 0
+		margin-left -14px
+		margin-right -14px
+		padding 0
+		list-style none
+		display flex
+		flex-wrap wrap
+		+r($s)
+			margin-left -8px
+			margin-right -8px
+			
+	&__item
+		margin-bottom 20px
+		margin-left 10px
+		margin-right 10px
+		// width 170px
+		// height 245px
+		flex 0 1 170px
+		+r($s)
+			flex 1 1 22%
+			
+		+r($x)
+			margin-bottom 15px
+			flex 1 1 43%
+
+	&__link
+		display block
+		&:hover
+			.licenses__image
+				filter grayscale(0)
+				tr(filter .3s ease)
+	&__image
+		filter grayscale(100)
+		tr(filter .3s ease)
+		img
+
+			max-width 100%
+			height auto

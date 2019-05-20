@@ -1,0 +1,442 @@
+
+
+
+mixin section-first()
+	section.section.section_first&attributes(attributes)
+		.section__in.container
+			.section__row.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					h1.section__title.title Работаем на объектах различной сложности
+					.section__text
+						p Mы выступаем в качестве Генподрядчика, выполняем работы с использованием сведений, составляющую государственную тайну со степенью "секретно"
+
+
+			.section__letters
+				img.section__letter.section__letter_c(src="assets/images/general/c.png", alt="")
+				img.section__letter.section__letter_t(src="assets/images/general/t.png", alt="")
+				img.section__letter.section__letter_m(src="assets/images/general/m.png", alt="")
+
+
+
+mixin section-second()
+	section.section.section_second.about&attributes(attributes)
+
+		.section__in.container
+			.section__row.row
+				.about__col.col-lg-10.col-md-10.col-sm-12.col-xs-12
+					.about__scrollable.fp-scrollable
+						.section__top.wysiwyg
+							h1.about__title.title-second О нас
+							.about__text
+								p
+									strong Наша компания за годы работы зарекомендовала себя  как добросовестный исполнитель, который дорожит своей репутацией и именем.
+
+								p Мы занимаемся выполнением общестроительных и инженерных работ, проектированием и монтажом  систем отопления, водоснабжения, канализации, систем электроснабжения, вентиляции и кондиционирования, сетей связи и систем контрольноизмерительных приборов и автоматики.  Каждая отрасль нашей деятельности соответствует всем требованиям и осуществляется под контролем компетентных специалистов.
+
+						ul.about__list
+							li.about__item
+								.about__item-top
+									.about__year-w
+										.about__year 2011
+										.about__year-text Год основания нашей компании
+
+								.about__image
+									img(src="assets/images/content/about-photo.jpg", alt="")
+
+								.about__image
+									img(src="assets/images/content/about-photo.jpg", alt="")
+
+								.about__image
+									img(src="assets/images/content/about-photo.jpg", alt="")
+
+
+
+mixin section-third()
+	section.section.section_third.activities&attributes(attributes)
+		.section__in.container
+				.activities__row.section__row.row
+					.activities__row-w.col-lg-10.col-md-10.col-sm-12.col-xs-12
+						.activities__scrollable.fp-scrollable
+							.activities__col
+								h1.section__title.title-second Наша деятельность
+
+								.section__text.wysiwyg
+									p Основными видами нашей деятельности  являются услуги <b>Генерального подрядчика,</b> осуществление общестроительных и инженерные работ.
+
+									blockquote
+										p Мы предоставляем полный комплекс: от  проектирования объекта до сдачи его в эксплуатацию.
+
+									p Берем на себя организацию всех видов работ, выполняя их своими силами или с привлечением подрядных организаций. Все работы осуществляются с соблюдением норм санитарной, экологической и пожарной безопасности. Мы сами составляем все сметы с учётом стоимости работ и материалов, подбираем наиболее подходящие технологии строительства. Осуществляем все необходимые общестроительные работы  от закладки фундамента до финишной отделки, от мелких построек до строительства многоэтажных жилых домов.
+
+									p На протяжении многих лет компания стремится к постоянному развитию, продолжая проявлять оперативность, компетентность и добросовестность по отношению к Заказчику. Мы дорожим своей репутацией и делаем работу на совесть.
+
+									blockquote
+										p Мы предоставляем полный комплекс: от  проектирования объекта до сдачи его в эксплуатацию.
+
+
+							.activities__side
+								.activities__image
+									img(src="assets/images/content/activities-photo.jpg", alt="")
+								ul.activities__list
+									li.activities__item
+										.activities__stat 10 000
+										.activities__item-text Больше проектов
+									li.activities__item
+										.activities__stat 5 000
+										.activities__item-text Построенных обьектов
+									li.activities__item
+										.activities__stat 1 000
+										.activities__item-text Бизнес партнеров
+
+
+mixin section-fourth()
+	section.section.section_fourth.work&attributes(attributes)
+		.section__in.container
+			.section__row.row
+				.work__col.col-lg-10.col-md-10.col-sm-12.col-xs-12
+					.section__scrollable.fp-scrollable
+						h1.work__title.section__title.title-second Инженерные работы
+
+						ul.work__list
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-1.png', srcset='assets/images/content/work-icon-1@2x.png 2x, assets/images/content/work-icon-1@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Система электроснабжения
+									a.work__item-more(href="#work-1") подробнее
+
+
+
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-2.png', srcset='assets/images/content/work-icon-2@2x.png 2x, assets/images/content/work-icon-2@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Системы отопления, водоснабжения и канализации
+									a.work__item-more(href="#work-2") подробнее
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-3.png', srcset='assets/images/content/work-icon-3@2x.png 2x, assets/images/content/work-icon-3@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Сети связи
+									a.work__item-more(href="#work-3") подробнее
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-4.png', srcset='assets/images/content/work-icon-4@2x.png 2x, assets/images/content/work-icon-4@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Кондиционирование и вентиляция
+									a.work__item-more(href="#work-4") подробнее
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-5.png', srcset='assets/images/content/work-icon-5@2x.png 2x, assets/images/content/work-icon-5@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Системы контрольно измерительных <br/>приборов иавтоматики (КИП и А)
+									a.work__item-more(href="#work-5") подробнее
+
+
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-1.png', srcset='assets/images/content/work-icon-1@2x.png 2x, assets/images/content/work-icon-1@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Система электроснабжения
+									a.work__item-more(href="#") подробнее
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-2.png', srcset='assets/images/content/work-icon-2@2x.png 2x, assets/images/content/work-icon-2@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Системы отопления, водоснабжения и канализации
+									a.work__item-more(href="#") подробнее
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-3.png', srcset='assets/images/content/work-icon-3@2x.png 2x, assets/images/content/work-icon-3@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Сети связи
+									a.work__item-more(href="#") подробнее
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-4.png', srcset='assets/images/content/work-icon-4@2x.png 2x, assets/images/content/work-icon-4@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Кондиционирование и вентиляция
+									a.work__item-more(href="#") подробнее
+							li.work__item
+								.work__icon
+									img(src='assets/images/content/work-icon-5.png', srcset='assets/images/content/work-icon-5@2x.png 2x, assets/images/content/work-icon-5@3x.png 3x' alt='Система электроснабжения')
+								.work__item-w
+									.work__item-title Системы контрольно измерительных <br/>приборов иавтоматики (КИП и А)
+									a.work__item-more(href="#") подробнее
+
+
+					.work__popup.popup(data-popup='work-1')
+						.popup__icon
+							img(src='assets/images/content/work-icon-1.png', srcset='assets/images/content/work-icon-1@2x.png 2x, assets/images/content/work-icon-1@3x.png 3x' alt='Система электроснабжения')
+						h2.popup__title Система электроснабжения:
+						.popup__text
+							p Систему электроснабжения любого объекта можно рассматривать как совокупность источников и систем преобразования, передачи и распределения электрической энергии. Система электроснабжения строится таким образом, чтобы она была надежна, удобна и безопасна в обслуживании, обеспечи- вала необходимое качество энергии и бесперебойность электроснабжения во всех режимах эксплуатации. В то же время система электроснабжения должна быть экономичной по ежегодным расходам, затратам, потерям энергии и расходу оборудования и дефицитных материалов.
+
+							p
+								strong Наши специалисты высокой квалификации следят, чтобы  каждый этап был выполнен на высочайшем уровне качества и безопасности.
+
+						button.popup__close
+							svg.popup__close-icon(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+								path(d='M0.928955 2.34296L2.34296 0.929955L7.99996 6.58596L13.657 0.928955L15.071 2.34296L9.41395 7.99996L15.071 13.657L13.657 15.071L7.99996 9.41395L2.34296 15.071L0.928955 13.657L6.58596 7.99996L0.928955 2.34296Z', fill='#1D1D1B')
+
+
+					.work__popup.popup(data-popup='work-2')
+						.popup__icon
+							img(src='assets/images/content/work-icon-2.png', srcset='assets/images/content/work-icon-2@2x.png 2x, assets/images/content/work-icon-2@3x.png 3x' alt='Системы отопления, водоснабжения и канализации')
+						h2.popup__title Системы отопления, водоснабжения и канализации
+						.popup__text
+							p Систему электроснабжения любого объекта можно рассматривать как совокупность источников и систем преобразования, передачи и распределения электрической энергии. Система электроснабжения строится таким образом, чтобы она была надежна, удобна и безопасна в обслуживании, обеспечи- вала необходимое качество энергии и бесперебойность электроснабжения во всех режимах эксплуатации. В то же время система электроснабжения должна быть экономичной по ежегодным расходам, затратам, потерям энергии и расходу оборудования и дефицитных материалов.
+
+							p
+								strong Наши специалисты высокой квалификации следят, чтобы  каждый этап был выполнен на высочайшем уровне качества и безопасности.
+
+						button.popup__close
+							svg.popup__close-icon(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+								path(d='M0.928955 2.34296L2.34296 0.929955L7.99996 6.58596L13.657 0.928955L15.071 2.34296L9.41395 7.99996L15.071 13.657L13.657 15.071L7.99996 9.41395L2.34296 15.071L0.928955 13.657L6.58596 7.99996L0.928955 2.34296Z', fill='#1D1D1B')
+
+
+					.work__popup.popup(data-popup='work-3')
+						.popup__icon
+							img(src='assets/images/content/work-icon-3.png', srcset='assets/images/content/work-icon-3@2x.png 2x, assets/images/content/work-icon-3@3x.png 3x' alt='Сети связи')
+						h2.popup__title Сети связи
+						.popup__text
+							p Систему электроснабжения любого объекта можно рассматривать как совокупность источников и систем преобразования, передачи и распределения электрической энергии. Система электроснабжения строится таким образом, чтобы она была надежна, удобна и безопасна в обслуживании, обеспечи- вала необходимое качество энергии и бесперебойность электроснабжения во всех режимах эксплуатации. В то же время система электроснабжения должна быть экономичной по ежегодным расходам, затратам, потерям энергии и расходу оборудования и дефицитных материалов.
+
+							p
+								strong Наши специалисты высокой квалификации следят, чтобы  каждый этап был выполнен на высочайшем уровне качества и безопасности.
+
+						button.popup__close
+							svg.popup__close-icon(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+								path(d='M0.928955 2.34296L2.34296 0.929955L7.99996 6.58596L13.657 0.928955L15.071 2.34296L9.41395 7.99996L15.071 13.657L13.657 15.071L7.99996 9.41395L2.34296 15.071L0.928955 13.657L6.58596 7.99996L0.928955 2.34296Z', fill='#1D1D1B')
+
+
+					.work__popup.popup(data-popup='work-4')
+						.popup__icon
+							img(src='assets/images/content/work-icon-4.png', srcset='assets/images/content/work-icon-4@2x.png 2x, assets/images/content/work-icon-4@3x.png 3x' alt='Кондиционирование и вентиляция')
+						h2.popup__title Кондиционирование и вентиляция:
+						.popup__text
+							p Систему электроснабжения любого объекта можно рассматривать как совокупность источников и систем преобразования, передачи и распределения электрической энергии. Система электроснабжения строится таким образом, чтобы она была надежна, удобна и безопасна в обслуживании, обеспечи- вала необходимое качество энергии и бесперебойность электроснабжения во всех режимах эксплуатации. В то же время система электроснабжения должна быть экономичной по ежегодным расходам, затратам, потерям энергии и расходу оборудования и дефицитных материалов.
+
+							p
+								strong Наши специалисты высокой квалификации следят, чтобы  каждый этап был выполнен на высочайшем уровне качества и безопасности.
+
+						button.popup__close
+							svg.popup__close-icon(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+								path(d='M0.928955 2.34296L2.34296 0.929955L7.99996 6.58596L13.657 0.928955L15.071 2.34296L9.41395 7.99996L15.071 13.657L13.657 15.071L7.99996 9.41395L2.34296 15.071L0.928955 13.657L6.58596 7.99996L0.928955 2.34296Z', fill='#1D1D1B')
+
+
+					.work__popup.popup(data-popup='work-5')
+						.popup__icon
+							img(src='assets/images/content/work-icon-5.png', srcset='assets/images/content/work-icon-5@2x.png 2x, assets/images/content/work-icon-5@3x.png 3x' alt='Системы контрольно измерительных приборов иавтоматики (КИП и А)')
+						h2.popup__title Системы контрольно измерительных приборов и автоматики (КИП и А):
+						.popup__text
+							p Систему электроснабжения любого объекта можно рассматривать как совокупность источников и систем преобразования, передачи и распределения электрической энергии. Система электроснабжения строится таким образом, чтобы она была надежна, удобна и безопасна в обслуживании, обеспечи- вала необходимое качество энергии и бесперебойность электроснабжения во всех режимах эксплуатации. В то же время система электроснабжения должна быть экономичной по ежегодным расходам, затратам, потерям энергии и расходу оборудования и дефицитных материалов.
+
+							p
+								strong Наши специалисты высокой квалификации следят, чтобы  каждый этап был выполнен на высочайшем уровне качества и безопасности.
+
+						button.popup__close
+							svg.popup__close-icon(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+								path(d='M0.928955 2.34296L2.34296 0.929955L7.99996 6.58596L13.657 0.928955L15.071 2.34296L9.41395 7.99996L15.071 13.657L13.657 15.071L7.99996 9.41395L2.34296 15.071L0.928955 13.657L6.58596 7.99996L0.928955 2.34296Z', fill='#1D1D1B')
+
+mixin section-five()
+	section.section.section_five.stages&attributes(attributes)
+		.section__in.container
+			.section__row.row
+				.col-lg-10.col-md-10.col-sm-12.col-xs-12
+					.section__scrollable.fp-scrollable
+						h1.section__title.stages__title.title-second Этапы деятельности
+
+						ul.stages__list
+							li.stages__item.stages__item_1
+								.stages__icon
+									img(src='assets/images/content/stages-icon-1.png', srcset='assets/images/content/stages-icon-1@2x.png 2x, assets/images/content/stages-icon-1@3x.png 3x' alt='')
+								.stages__item-title 1 этап
+								.stages__text Обследование <br/>объекта
+							li.stages__item.stages__item_2
+								.stages__icon
+									img(src='assets/images/content/stages-icon-2.png', srcset='assets/images/content/stages-icon-2@2x.png 2x, assets/images/content/stages-icon-2@3x.png 3x' alt='')
+								.stages__item-title 2 этап
+								.stages__text Проектирование
+							li.stages__item.stages__item_3
+								.stages__icon
+									img(src='assets/images/content/stages-icon-3.png', srcset='assets/images/content/stages-icon-3@2x.png 2x, assets/images/content/stages-icon-3@3x.png 3x' alt='')
+								.stages__item-title 3 этап
+								.stages__text Поставка <br/>оборудования <br/>и материалов
+
+							li.stages__item.stages__item_4
+								.stages__icon
+									img(src='assets/images/content/stages-icon-4.png', srcset='assets/images/content/stages-icon-4@2x.png 2x, assets/images/content/stages-icon-4@3x.png 3x' alt='')
+								.stages__item-title 4 этап
+								.stages__text Монтажные <br/>работы
+							li.stages__item.stages__item_5
+								.stages__icon
+									img(src='assets/images/content/stages-icon-5.png', srcset='assets/images/content/stages-icon-5@2x.png 2x, assets/images/content/stages-icon-5@3x.png 3x' alt='')
+								.stages__item-title 5 этап
+								.stages__text Пусконаладочные <br/>работы
+							li.stages__item.stages__item_6
+								.stages__icon
+									img(src='assets/images/content/stages-icon-6.png', srcset='assets/images/content/stages-icon-6@2x.png 2x, assets/images/content/stages-icon-6@3x.png 3x' alt='')
+								.stages__item-title 6 этап
+								.stages__text Гарантийное и <br/>постгарантийное обслуживание
+
+
+mixin section-six()
+	section.section.section_six.advantages&attributes(attributes)
+		.section__in.container
+			.section__row.row
+				.advantages__col.col-lg-10.col-md-10.col-sm-12.col-xs-12
+					.section__scrollable.fp-scrollable
+						h1.advantages__title.section__title.title-second Преимущества
+
+						.advantages__text.wysiwyg
+							p На протяжении всего существования наша компания стремится к постоянному развитию, продолжая проявлять оперативность, компетентность и добросовестность по отношению к Заказчикам.
+
+						ul.advantages__list
+							li.advantages__item.advantages__item_1
+								.advantages__icon
+									img(src='assets/images/content/advantages-icon-1.png', srcset='assets/images/content/advantages-icon-1@2x.png 2x, assets/images/content/advantages-icon-1@3x.png 3x' alt='')
+								.advantages__item-title Клиенто-<br/>ориентированность
+
+							li.advantages__item.advantages__item_2
+								.advantages__icon
+									img(src='assets/images/content/advantages-icon-2.png', srcset='assets/images/content/advantages-icon-2@2x.png 2x, assets/images/content/advantages-icon-2@3x.png 3x' alt='')
+								.advantages__item-title Гибкий <br/>подход
+
+							li.advantages__item.advantages__item_3
+								.advantages__icon
+									img(src='assets/images/content/advantages-icon-3.png', srcset='assets/images/content/advantages-icon-3@2x.png 2x, assets/images/content/advantages-icon-3@3x.png 3x' alt='')
+								.advantages__item-title Налаженные связи <br/>с производителями
+
+							li.advantages__item.advantages__item_4
+								.advantages__icon
+									img(src='assets/images/content/advantages-icon-4.png', srcset='assets/images/content/advantages-icon-4@2x.png 2x, assets/images/content/advantages-icon-4@3x.png 3x' alt='')
+								.advantages__item-title После гарантийное <br/>сервесное обслуживание
+
+
+mixin section-seven()
+	section.section.section_seven.customers&attributes(attributes)
+		.section__in.container
+			.customers__col.section__row.row
+				.col-lg-10.col-md-10.col-sm-12.col-xs-12
+					.section__scrollable.fp-scrollable
+						.section__top
+							h1.section__title.customers__title.title-second Наши заказчики
+
+							.section__text.customers__text
+								p При осуществлении своей деятельности у Компании сложились доверительные и партнерские отношения с такими крупными Заказчиками как “РТРС” (Рязанская область), ПАО «НК “Роснефть”, ООО “ТехноНиколь” и ПАО “Транснефть”, на объектах которых ООО “СпецТехноМонтаж” работало и продолжает работать как в качестве Генподрядчика, так и в качестве субподрядчика в разных направлениях: строительно-монтажные и пуско-наладочные работы общего и специального характера, ремонт, обслуживание и монтаж различного оборудования и т.д.
+
+						ul.customers__list
+							li.customers__item.customers__item_1
+								img(src='assets/images/content/customer-1.png', srcset='assets/images/content/customer-1@2x.png 2x, assets/images/content/customer-1@3x.png 3x' alt='')
+							li.customers__item.customers__item_2
+								img(src='assets/images/content/customer-2.png', srcset='assets/images/content/customer-2@2x.png 2x, assets/images/content/customer-2@3x.png 3x' alt='')
+							li.customers__item.customers__item_3
+								img(src='assets/images/content/customer-3.png', srcset='assets/images/content/customer-3@2x.png 2x, assets/images/content/customer-3@3x.png 3x' alt='')
+							li.customers__item.customers__item_4
+								img(src='assets/images/content/customer-4.png', srcset='assets/images/content/customer-4@2x.png 2x, assets/images/content/customer-4@3x.png 3x' alt='')
+
+
+							li.customers__item.customers__item_1
+								img(src='assets/images/content/customer-1.png', srcset='assets/images/content/customer-1@2x.png 2x, assets/images/content/customer-1@3x.png 3x' alt='')
+							li.customers__item.customers__item_2
+								img(src='assets/images/content/customer-2.png', srcset='assets/images/content/customer-2@2x.png 2x, assets/images/content/customer-2@3x.png 3x' alt='')
+							li.customers__item.customers__item_3
+								img(src='assets/images/content/customer-3.png', srcset='assets/images/content/customer-3@2x.png 2x, assets/images/content/customer-3@3x.png 3x' alt='')
+							li.customers__item.customers__item_4
+								img(src='assets/images/content/customer-4.png', srcset='assets/images/content/customer-4@2x.png 2x, assets/images/content/customer-4@3x.png 3x' alt='')
+
+
+
+							li.customers__item.customers__item_1
+								img(src='assets/images/content/customer-1.png', srcset='assets/images/content/customer-1@2x.png 2x, assets/images/content/customer-1@3x.png 3x' alt='')
+							li.customers__item.customers__item_2
+								img(src='assets/images/content/customer-2.png', srcset='assets/images/content/customer-2@2x.png 2x, assets/images/content/customer-2@3x.png 3x' alt='')
+							li.customers__item.customers__item_3
+								img(src='assets/images/content/customer-3.png', srcset='assets/images/content/customer-3@2x.png 2x, assets/images/content/customer-3@3x.png 3x' alt='')
+							li.customers__item.customers__item_4
+								img(src='assets/images/content/customer-4.png', srcset='assets/images/content/customer-4@2x.png 2x, assets/images/content/customer-4@3x.png 3x' alt='')
+
+
+mixin section-eight()
+	section.section.section_eight.licenses&attributes(attributes)
+		.section__in.container
+			.section__row.row
+				.col-lg-10.col-md-10.col-sm-12.col-xs-12
+					.section__scrollable.fp-scrollable
+
+						.section__top
+							h1.section__title.customers__title.title-second Лицензии
+
+							.section__text.customers__text
+								p ООО "СпецТехноМонтаж" является членом Ассоциации Саморегулируемой организации "Инновационное <br/>объединение строителей" с предоставлением допуска к видам работ, которые оказывают влияние на <br/>безопасность объектов капитального строительства
+
+
+						ul.licenses__list
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+							li.licenses__item
+								a.licenses__link(href="assets/images/content/license.jpg")
+									.licenses__image
+										img(src='assets/images/content/license.jpg', srcset='assets/images/content/license@2x.jpg 2x, assets/images/content/license@3x.jpg 3x' alt='')
+
+
+mixin section-nine()
+	section.section.section_nine.contacts.fp-auto-height&attributes(attributes)
+
+		.contacts__in.section__in.container
+			.contacts__row.section__row.row
+				.contacts__col.col-lg-10.col-md-10.col-sm-12.col-xs-12
+					.section__scrollable.fp-scrollable
+						.section__top
+							h1.section__title.customers__title.title-second Контакты
+
+						ul.contacts__list
+							li.contacts__item
+								.contacts__city Рязань
+								.contacts__address 390046, г. Рязань, <br/>ул. Введенская, д. 110, H7
+								a.contacts__email(href="mailto:stm.rzn@mail.ru") stm.rzn@mail.ru
+								a.contacts__phone(href="tel:+74912907788") 8 (4912) 90-77-88
+
+
+							li.contacts__item
+								.contacts__city Москва
+								.contacts__address 390046, г. Москва, <br/>ул. Новорязанское ш, д. 110
+								a.contacts__email(href="mailto:stm.rzn@mail.ru") stm.rzn@mail.ru
+								a.contacts__phone(href="tel:+74912907788") 8 (4912) 90-77-88
+						
+							
