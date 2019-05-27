@@ -7,6 +7,7 @@
 		list-style none
 		display flex
 		flex-wrap wrap
+		justify-content flex-start
 		+r($s)
 			margin-left -8px
 			margin-right -8px
@@ -17,24 +18,29 @@
 		margin-right 10px
 		// width 170px
 		// height 245px
-		flex 0 1 170px
+		// flex 0 1 170px
+		max-width 170px
+		flex-grow 0
+		flex-shrink 1
+		flex-basis 170px
+		+r($m)
+			// flex 1 1 22%
+			flex-grow 1
+			flex-shrink 1
+			flex-basis 22%
 		+r($s)
-			flex 1 1 22%
+			// flex 1 1 21%
+			flex-basis 21%
 			
 		+r($x)
 			margin-bottom 15px
-			flex 1 1 43%
+			// flex 1 1 43%
+			max-width 43%
+			flex-basis 43%
 
 	&__link
 		display block
-		&:hover
-			.licenses__image
-				filter grayscale(0)
-				tr(filter .3s ease)
 	&__image
-		filter grayscale(100)
-		tr(filter .3s ease)
 		img
-
 			max-width 100%
 			height auto

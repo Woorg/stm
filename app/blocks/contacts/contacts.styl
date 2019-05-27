@@ -1,24 +1,20 @@
 .contacts
-	// .section__in
-
-	// &__row
-	// 	height 100%
-	// 	clearfix()
-		
-	.slimScrollDiv
-		+r($x)
-			
-			height 990px
-					
+	// &.fp-section.fp-table,
+	// 	// height 1300px
+	// 	+r($x)		
+	// 		height 1300px !important
+	// .fp-tableCell
+	// 	// height 1300px
+	// 	+r($x)		
+	// 		height 1300px !important			
 	&__col
 		position relative
 		padding-bottom 0
-		// +r($x)
-		// 	min-height 1160px 
 		&:after
 			position absolute
 			z-index -1
 			// top 94px
+			
 			bottom 0
 			// left -124px
 			left -118px
@@ -26,10 +22,19 @@
 			width 1282px
 			height 733px
 			background url(../images/content/map.png) 0 100% no-repeat
+			+r(1199px)
+				left -310px
 			+r($l)
 				left -315px
+				// left -118px
+			+r(992px)
+				left -126px
+			
 			+r($m)
-				left -252px
+				// left -252px
+				// left -238px
+				// left -228px
+				left -126px
 			+r($s)
 				left -252px
 			+r($x)
@@ -44,8 +49,10 @@
 		padding 0
 		list-style none
 		+r($x)
-			// min-height 1000px
-			padding-bottom 400px
+			min-height 1000px
+			// padding-bottom 400px
+		+r($s)
+			min-height 630px
 
 	&__item
 		margin-bottom 48px

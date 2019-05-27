@@ -11,11 +11,15 @@
 			width 1349px
 			height 461px
 			background url('../images/general/wave.png') 0 100%  no-repeat
+			+r(1200px)
+				left -374px
+				width 1166px
 			+r($l)
 				left -374px
 				width 1166px
 			+r($m)
-				left -290px
+				// left -290px
+				left -186px
 	&__title
 		margin-bottom 20px
 
@@ -27,125 +31,199 @@
 			margin-bottom 97px
 		+r($s)
 			margin-bottom 77px
+			margin-bottom 118px
+		+r($x)
+			margin-bottom 77px
+
 	&__list
 		margin 0
 		padding 0
-		min-height 461px
+		// height 460px
+		height 460px
+		min-height 460px
+		// max-height 100% 
 
 		list-style none
 		display flex
+		flex-direction row
 		flex-wrap wrap
+		// justify-content flex-start
 		// align-items center
 		align-items flex-start
-		+r($m)
-
-			flex-direction row
+		// +r($m)
+		// 	flex-direction row
 	&__item
 		position relative
 		// margin-bottom 24px
 		margin-bottom 66px
-		flex 1 1 auto
+		// flex 1 1 auto
+		flex-grow 1
+		flex-shrink 1
+		flex-basis auto 
+		
+		+r(1200px)
+			margin-bottom 0
 		+r($l)
 			// margin-bottom 183px
 			margin-bottom 0
 		+r($m)
 			margin-bottom 102px
 		+r($s)
+			margin-bottom 117px
+			width 100%
+		+r($x)
 			margin-bottom 114px
+			
 		&:last-child
 			margin-bottom 30px
 
 
 
 	&__item_1
-		margin-left 40px
-		width 336px
-		padding-left 168px
-		+r($l)
-			// margin-top 7px
-			margin-left 0
-			padding-left 122px
-		+r($m)
-			margin-left 40px
-			padding-left 168px
-			width 100
+		// margin-left 40px
+		// width 336px
+		// padding-left 168px
 		+r($s)
-			margin-left 0
-			padding-left 154px
-		.advantages__icon
+			margin-bottom 0
+
+		.advantages__item-w
+			margin-left 40px
+			width 336px
+			padding-left 168px
+			+r(1200px)
+				
+				margin-left 0
+				padding-left 122px
+			
 			+r($l)
-				// top -44px
+				// margin-top 7px
+				margin-left 0
+				padding-left 122px
+			+r($m)
+				margin-left 40px
+				padding-left 168px
+				width 100%
+			+r($s)
+				margin-left 0
+				margin-bottom 102px
+				padding-left 210px
+			+r($x)
+				margin-left 0
+				margin-bottom 102px
+				padding-left 154px
+			
+		.advantages__icon
+			+r(1200px)
 				top 9px
-				// bottom -8px
+				max-width 141px
+			+r($l)
+				top 9px
 				max-width 141px
 			+r($m)
 				max-width 100%
 			+r($s)
+				top 6px
+				left 46px
+				// max-width 126px
+			+r($x)
 				top 28px
 				left 10px
 				max-width 126px
 		.advantages__item-title
 			margin-bottom -35px
 			+r($l)
-				// margin-bottom -50px
 				margin-bottom 0
 			
 
 
 	&__item_2
-		width 166px
-		// padding-left 104px
-		padding-left 24px
-		+r($l)
-			padding-left 47px
-		+r($m)
-			margin-left 428px
-			padding-left 64px
-			width 100%
-		+r($s)
-			margin-left 0
-			padding-left 154px
+		// +r($s)
+		// 	margin-left auto
+		.advantages__item-w
+			width 166px
+			padding-left 24px
+			+r(1200px)
+				padding-left 47px
+
+			+r($l)
+				padding-left 47px
+			+r($m)
+				margin-left 428px
+				padding-left 64px
+				width 100%
+			+r($s)
+				// margin-left 0
+				margin-left auto
+				padding-left 135px
+				width 380px
+				// justify-content flex-end
+			+r($x)
+				margin-left 0
+				padding-left 154px
+
 		.advantages__icon
 			top 20px
 			left -80px
-			+r($l)
-				// top 25px
+			+r(1200px)
 				top 19px
 				left -42px
 				max-width 110px
-
+			+r($l)
+				top 19px
+				left -42px
+				max-width 110px
 			+r($m)
 				top 17px
 				max-width 100%
 
 			+r($s)
+				top 16px
+				left 30px
+				// max-width 100
+			+r($x)
 				top 37px
 				left 40px
 				max-width 100px
-
 		.advantages__item-title
 			margin-bottom -35px
+			+r(1200px)
+				margin-bottom 0
 			+r($l)
 				// margin-bottom -60px
 				margin-bottom 0
 
 	&__item_3
-		// margin-left 166px
-		margin-left 172px
-		width 302px
-		padding-left 137px
-		+r($l)
-			margin-top -40px
-			margin-left 48px
-		+r($m)
-			margin-top 0
-			padding-left 160px
-			width 100%
-		+r($s)
-			margin-left 0
-			padding-left 152px
+		.advantages__item-w
+			margin-left 172px
+			width 302px
+			padding-left 137px
+			
+			+r(1200px)
+				margin-top -40px
+				margin-left 48px
+				// margin-left 172px
+				// padding-left 137px
+				
+			+r($l)
+				margin-top -40px
+				margin-left 48px
+			+r($m)
+				margin-top 0
+				padding-left 160px
+				width 100%
+			+r($s)
+				margin-left 0
+				padding-left 208px
+				width 380px
+			+r($x)	
+				margin-left 0
+				padding-left 152px
 		.advantages__icon
 			top -27px
+			+r(1200px)
+				top 27px
+				left 15px
+				max-width 105px
 			+r($l)
 				top 27px
 				left 15px
@@ -154,12 +232,20 @@
 				top 7px
 				max-width 100%
 			+r($s)
+				top -10px
+				left 57px
+				// max-width 93px
+			+r($x)	
 				top 37px
 				left 31px
 				max-width 93px
+
 		.advantages__item-title
 			margin-top -44px
 			margin-bottom 0
+			+r(1200px)
+				margin-top 0
+				margin-bottom 0
 			+r($l)
 				margin-top 0
 				margin-bottom 0
@@ -167,24 +253,43 @@
 				margin-top -12px
 			+r($s)
 				margin-top -29px	
+			+r($x)	
+				margin-top -29px	
 
 	&__item_4
-		width 392px
-		// padding-left 185px
-		padding-left 174px
-		+r($l)
-			margin-top 0
-			padding-left 154px
-		+r($m)
-			margin-left 280px
-			padding-left 104px
-			width 100%
-		+r($s)
-			margin-left 0
-			padding-left 154px
+		.advantages__item-w
+			width 392px
+			// padding-left 185px
+			padding-left 174px
+			+r(1200px)
+				// padding-left 174px
+				
+				margin-top 0
+				padding-left 154px
+			+r($l)
+				margin-top 0
+				padding-left 154px
+			+r($m)
+				margin-left 280px
+				padding-left 104px
+				width 100%
+			+r($s)
+				margin-left auto
+				
+				padding-left 154px
+				width 399px
+			+r($x)	
+				margin-left 0
+				margin-bottom 50px
+				padding-left 154px
+
 		.advantages__icon
 			top 0
 			left -10px
+			+r(1200px)
+				top -18px
+				left 20px
+				max-width 153px
 			+r($l)
 				top -18px
 				left 20px
@@ -195,12 +300,21 @@
 				max-width 100%
 
 			+r($s)
+				// top 62px
+				top 64px
+				// left 4px
+				left -29px
+				// max-width 143px
+			+r($x)	
 				top 62px
 				left 4px
 				max-width 143px
 		.advantages__item-title
 			margin-top -50px
 			margin-bottom 0
+			+r(1200px)
+				margin-top -60px
+				margin-bottom 0
 			+r($l)
 				margin-top -60px
 				margin-bottom 0
@@ -208,6 +322,14 @@
 				margin-top -30px
 			+r($s)
 				margin-top 20px
+			+r($x)	
+				margin-top 20px
+				
+
+	&__item-w
+		position relative
+		display flex
+		
 
 	&__icon
 		position absolute

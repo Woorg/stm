@@ -1,18 +1,19 @@
 import svg4everybody from 'svg4everybody';
-import $ from 'jquery';
+// import $ from 'jquery';
 // import slick from 'slick-carousel';
 import 'magnific-popup';
 import fullpage from 'fullpage.js';
 // import 'simplebar';
 import slimScroll from 'jquery-slimscroll';
 // import 'malihu-custom-scrollbar-plugin';
+// import 'jquery-gray/js/jquery.gray.min.js';
 
 
 (function ($) {
 
 	svg4everybody();
 
-	$(function() {
+	$(function () {
 
 		var styles = [
 			'padding: 2px 9px',
@@ -45,7 +46,7 @@ import slimScroll from 'jquery-slimscroll';
 			// sectionSelector: '.section',
 			// navigationTooltips: ['01', '02', '03', '04', '05', '06', '07', '08', '09'],
 			// sectionsColor: ['#ffed00', '#ffed00', '#ffed00', '#ffed00', '#ffed00', '#ffed00', '#ffed00', '#ffed00', '#ffed00'],
-			normalScrollElements: '.contacts',
+			// normalScrollElements: '.contacts',
 			// loopBottom: true,
 			// loopTop: true,
 			// navigationPosition: 'bottom',
@@ -132,6 +133,13 @@ import slimScroll from 'jquery-slimscroll';
 		});
 
 
+		// Grayscale
+
+
+		// $('.licenses__image ').gray();
+
+
+
 		// Gallery
 
 		$('.licenses__link').magnificPopup({
@@ -143,10 +151,10 @@ import slimScroll from 'jquery-slimscroll';
 
 		// Scrollto
 
-		$('.logo').on('click', function(e) {
-			var _scroll = $(this).attr('href');
-			if (_scroll != '#' && $(_scroll).length) {
-				$('html, body').animate({ scrollTop: $(_scroll).offset().top - 80 }, 300);
+		$('.logo').on('click', function() {
+			var scroll = $(this).attr('href');
+			if (scroll !== '#' && $(scroll).length) {
+				$('html, body').animate({ scrollTop: $(scroll).offset().top }, 300);
 			}
 		});
 
@@ -175,6 +183,11 @@ import slimScroll from 'jquery-slimscroll';
 			$('.nav__item').parent().parent().parent().removeClass('header_nav-mob');
 
 		});
+
+
+
+
+
 
 
 		// const $navMoreTrigger = $('.header__nav_mob .nav__item');
