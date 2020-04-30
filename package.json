@@ -101,7 +101,7 @@
     "isotope-packery": "^2.0.1",
     "jade-get-data": "^1.0.0",
     "jade-injected": "^1.0.2",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "jquery-gray": "^1.6.0",
     "magnific-popup": "^1.1.0",
     "merge-stream": "^1.0.0",
